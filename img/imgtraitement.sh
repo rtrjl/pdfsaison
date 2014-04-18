@@ -1,0 +1,1 @@
+ls -1 *.jpg | parallel -j 4 convert '{}' -resize 670x375 -background black -compose Copy -gravity center -extent 670x375 -quality 89 '{.}-web.jpg'
